@@ -1,38 +1,31 @@
-// App.tsx
+import { Routes, Route } from "react-router-dom";
 
-import { Routes, Route, Link } from "react-router-dom";
+// Layout
+import Layout from "./layout/Layout";
 
 // Pages
-import Home from "./home/Home.tsx";
-import About from "./home/About.tsx";
-import Projects from "./home/Projects.tsx";
-import Contact from "./home/Contact.tsx";
+import Home from "./home/Home";
+import About from "./home/About";
+import Projects from "./home/Projects";
+import Contact from "./home/Contact";
 
-// Projects
-import Pokedex from "./projects/Pokedex/Pokedex.tsx";
-
+// Individual Projects
+import Pokedex from "./projects/Pokedex/Pokedex";
 
 function App() {
   return (
-    <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+    <Routes>
+      {/* Layout wrapper */}
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-
-
-        {/* Individual Routes */}
-        <Route path="/projects/pokedex" element={<Pokedex />} />
-      </Routes>
-    </>
+        {/* Sub-routes under projects */}
+        <Route path="projects/pokedex" element={<Pokedex />} />
+      </Route>
+    </Routes>
   );
 }
 

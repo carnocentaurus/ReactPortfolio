@@ -1,17 +1,9 @@
-import { Link } from "react-router-dom";
-
-
 function Home() {
   return (
     <main>
-        <nav>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-        </nav>
+      <h1>Welcome to My Portfolio</h1>
     </main>
   );
 }
-
 
 export default Home;
