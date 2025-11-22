@@ -3,13 +3,13 @@
 import { Routes, Route, Link } from "react-router-dom";
 
 // Pages
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Home from "./home/Home.tsx";
+import About from "./home/About.tsx";
+import Projects from "./home/Projects.tsx";
+import Contact from "./home/Contact.tsx";
 
 // Projects
-import Pokedex from "./projects/Pokedex/Pokedex";
+import Pokedex from "./projects/Pokedex/Pokedex.tsx";
 
 
 function App() {
