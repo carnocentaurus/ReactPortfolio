@@ -1,7 +1,7 @@
 function Home() {
   return (
     <main>
-      <h1>Welcome to My Portfolio</h1>
+      <h1 className="text-4xl font-bold text-blue-500">Tailwind is working!</h1>
     </main>
   );
 }
