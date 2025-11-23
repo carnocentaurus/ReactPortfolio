@@ -1,4 +1,25 @@
+/* index.css */
+
 @import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg-desktop {
+  background-image: url('/DesktopLake.png');
+}
+
+.navbar {
+  color: black;
+}
 
 /*
 @tailwind base;

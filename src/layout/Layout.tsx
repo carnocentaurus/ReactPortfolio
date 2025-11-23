@@ -1,3 +1,5 @@
+// Layout.tsx
+
 import { Link, Outlet } from "react-router-dom";
 
 function Layout() {
@@ -11,8 +13,14 @@ function Layout() {
         <Link to="/contact">Contact</Link>
       </nav>
 
-      {/* All pages render here */}
-      <Outlet />
+      <div 
+        className="w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{
+          backgroundImage: 'url(/DesktopLake.png)'
+        }}
+      >
+        <Outlet />
+      </div>
     </>
   );
 }

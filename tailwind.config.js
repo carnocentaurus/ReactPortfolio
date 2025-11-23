@@ -1,14 +1,17 @@
 // tailwind.config.js
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  // MUST have the 'content' key
   content: [
     "./index.html",
-    // This must match your component location
-    "./src/**/*.{js,ts,jsx,tsx}", 
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'desktop-lake': "url('/DesktopLake.png')",
+      },
+    },
   },
   plugins: [],
 }
