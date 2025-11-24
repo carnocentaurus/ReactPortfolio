@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
       {/* Global Navigation */}
-      <nav className="navbar">
+      <nav className="flex justify-center text-[#333] font-poppins">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
@@ -14,7 +14,14 @@ function Layout() {
       </nav>
 
       <div 
-        className="w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
+        className="
+          w-full 
+          min-h-screen 
+          bg-cover 
+          bg-center 
+          bg-no-repeat 
+          bg-fixed
+          "
         style={{
           backgroundImage: 'url(/DesktopLake.png)'
         }}

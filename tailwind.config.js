@@ -11,6 +11,10 @@ export default {
       backgroundImage: {
         'desktop-lake': "url('/DesktopLake.png')",
       },
+      fontFamily: {
+        righteous: ["'Righteous'", "sans-serif"],
+        poppins: ["'Poppins'", "sans-serif"],
+      },
     },
   },
   plugins: [],

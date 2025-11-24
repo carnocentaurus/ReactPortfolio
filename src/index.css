@@ -2,6 +2,19 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Righteous";
+  src: url("./assets/fonts/Righteous.ttf") format("truetype");
+}
+
+@utility font-righteous {
+  font-family: "Righteous", sans-serif;
+}
+
+@utility font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +28,6 @@ html, body, #root {
 
 .bg-desktop {
   background-image: url('/DesktopLake.png');
-}
-
-.navbar {
-  color: black;
 }
 
 /*
