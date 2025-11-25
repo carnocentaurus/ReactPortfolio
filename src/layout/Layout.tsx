@@ -13,8 +13,6 @@ function Layout() {
           bg-center 
           bg-no-repeat 
           bg-fixed
-          overflow-y-auto
-          lg:no-scrollbar
           "
         style={{
           backgroundImage: 'url(/GrayWaves.png)'
@@ -28,7 +26,7 @@ function Layout() {
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </nav>
-        
+
         <Outlet />
       </div>
     </>
