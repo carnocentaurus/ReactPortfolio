@@ -5,14 +5,6 @@ import { Link, Outlet } from "react-router-dom";
 function Layout() {
   return (
     <>
-      {/* Global Navigation */}
-      <nav className="flex justify-center text-[#333] font-poppins">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
-
       <div 
         className="
           w-full 
@@ -21,11 +13,22 @@ function Layout() {
           bg-center 
           bg-no-repeat 
           bg-fixed
+          overflow-y-auto
+          lg:no-scrollbar
           "
         style={{
-          backgroundImage: 'url(/DesktopLake.png)'
+          backgroundImage: 'url(/GrayWaves.png)'
         }}
       >
+
+        {/* Global Navigation */}
+        <nav className="flex justify-center text-[#333] font-poppins">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+        
         <Outlet />
       </div>
     </>

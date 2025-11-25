@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'desktop-lake': "url('/DesktopLake.png')",
+        'gray-waves': "url('/GrayWaves.png')",
       },
       fontFamily: {
         righteous: ["'Righteous'", "sans-serif"],

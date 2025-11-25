@@ -15,6 +15,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+@utility no-scrollbar {
+  /* Firefox */
+  scrollbar-width: none;
+  
+  /* Chrome, Edge, Safari */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +37,7 @@ html, body, #root {
 }
 
 .bg-desktop {
-  background-image: url('/DesktopLake.png');
+  background-image: url('/GrayWaves.png');
 }
 
 /*
