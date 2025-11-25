@@ -1,6 +1,7 @@
 // Layout.tsx
 
-import { Link, Outlet } from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import NavAnchor from "./NavAnchor";
 
 function Layout() {
   return (
@@ -20,11 +21,19 @@ function Layout() {
       >
 
         {/* Global Navigation */}
-        <nav className="flex justify-center text-[#333] font-poppins">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+        <nav className="
+          flex justify-center 
+          text-[#333] 
+          text-base
+          font-poppins 
+          font-semibold
+          gap-10
+          pt-20"
+        >
+          <NavAnchor to="/">Home</NavAnchor>
+          <NavAnchor to="/about">About</NavAnchor>
+          <NavAnchor to="/projects">Projects</NavAnchor>
+          <NavAnchor to="/contact">Contact</NavAnchor>
         </nav>
 
         <Outlet />
@@ -32,5 +41,6 @@ function Layout() {
     </>
   );
 }
+
 
 export default Layout;

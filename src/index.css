@@ -1,33 +1,21 @@
-/* index.css */
-
 @import "tailwindcss";
+
+@theme {
+  --font-righteous: "Righteous", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* custom background */
+  --image-gray-waves: url('/GrayWaves.png');
+}
 
 @font-face {
   font-family: "Righteous";
   src: url("./assets/fonts/Righteous.ttf") format("truetype");
 }
 
-@utility font-righteous {
-  font-family: "Righteous", sans-serif;
-}
-
-@utility font-poppins {
-  font-family: "Poppins", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body, #root {
   width: 100%;
   min-height: 100vh;
-}
-
-.bg-desktop {
-  background-image: url('/GrayWaves.png');
 }
 
 /*

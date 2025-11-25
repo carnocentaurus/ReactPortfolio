@@ -5,11 +5,11 @@ function Home() {
     <main className="flex justify-center flex-col items-center">
       <img 
         src={ProfilePic} 
-        className="w-1/5 rounded-full drop-shadow-[2px_2px_1px_#4c4c4c]"
+        className="w-1/5 rounded-full mt-17 mb-5"
         alt="Profile Pic"
       />
 
-      <p className="font-poppins text-[#333]">Eric John Mercolino</p>
+      <p className="text-[#f4f4f4]  text-base font-poppins font-semibold">ERIC JOHN MERCOLINO</p>
     </main>
   );
 }
