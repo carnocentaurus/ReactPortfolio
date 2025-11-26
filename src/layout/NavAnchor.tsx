@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 
 // Define the styles that ALL links will share (Structural styles)
 const BASE_STYLES = 
-  "transition-colors w-25 py-1.5 text-center rounded-full";
+  "transition-colors w-full lg:w-40 py-2 sm:py-2.5 lg:py-2 text-center rounded-full";
 
 // Define the styles for the three possible states
 const INACTIVE_STYLES = "bg-[#f4f4f4] text-[#333] hover:bg-[#333] hover:text-[#f4f4f4]";

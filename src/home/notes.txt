@@ -1,0 +1,102 @@
+// Layout.tsx
+
+import {Outlet} from "react-router-dom";
+import NavAnchor from "./NavAnchor";
+
+function Layout() {
+  return (
+    <>
+      <div 
+        className="
+          w-full 
+          min-h-screen 
+          bg-cover 
+          bg-center 
+          bg-no-repeat 
+          bg-fixed
+          "
+        style={{
+          backgroundImage: 'url(/GrayWaves.png)'
+        }}
+      >
+
+        {/* Global Navigation */}
+        <nav className="
+          flex justify-center 
+          text-[#333] 
+          text-base
+          font-poppins 
+          font-semibold
+          gap-10
+          pt-20"
+        >
+          <NavAnchor to="/">Home</NavAnchor>
+          <NavAnchor to="/about">About</NavAnchor>
+          <NavAnchor to="/projects">Projects</NavAnchor>
+          <NavAnchor to="/contact">Contact</NavAnchor>
+        </nav>
+
+        <Outlet />
+      </div>
+    </>
+  );
+}
+
+
+export default Layout;
+
+
+
+import ProfilePic from "./ProfilePic.png";
+
+function Home() {
+  return (
+    <main className="flex justify-center flex-col items-center">
+      <img 
+        src={ProfilePic} 
+        className="w-1/5 rounded-full mt-17 mb-5"
+        alt="Profile Pic"
+      />
+
+      <p className="text-[#f4f4f4]  text-base font-poppins font-semibold">ERIC JOHN MERCOLINO</p>
+    </main>
+  );
+}
+
+export default Home;
+
+
+
+// NavAnchor.tsx
+
+import { NavLink, type LinkProps } from "react-router-dom";
+import type { ReactNode } from "react"; 
+
+// Define the styles that ALL links will share (Structural styles)
+const BASE_STYLES = 
+  "transition-colors w-25 py-1.5 text-center rounded-full";
+
+// Define the styles for the three possible states
+const INACTIVE_STYLES = "bg-[#f4f4f4] text-[#333] hover:bg-[#333] hover:text-[#f4f4f4]";
+const ACTIVE_STYLES = "bg-[#333] text-[#f4f4f4] hover:opacity-80";
+
+// NavAnchor component accepts all props that a regular NavLink does
+interface NavAnchorProps extends LinkProps {
+  children: ReactNode;
+}
+
+function NavAnchor({ children, className, ...props }: NavAnchorProps) {
+  return (
+    <NavLink 
+      {...props}
+      // Use the className function to conditionally apply styles
+      className={({ isActive }) => 
+        `${BASE_STYLES} ${isActive ? ACTIVE_STYLES : INACTIVE_STYLES} ${className || ''}`
+      }
+    >
+      {children}
+    </NavLink>
+  );
+}
+
+export default NavAnchor;
