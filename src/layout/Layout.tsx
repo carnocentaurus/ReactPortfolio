@@ -1,7 +1,7 @@
 // Layout.tsx
 
 import {Outlet} from "react-router-dom";
-import NavAnchor from "./NavAnchor";
+import NavAnchor from "./SharedStyles";
 
 function Layout() {
   return (
@@ -43,7 +43,7 @@ function Layout() {
           <NavAnchor to="/contact">Contact</NavAnchor>
         </nav>
 
-        <Outlet />
+        <Outlet/>
 
         {/* Global Navigation - Shows on mobile/tablet, hidden on desktop */}
         <nav className="

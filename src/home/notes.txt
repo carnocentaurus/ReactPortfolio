@@ -14,21 +14,28 @@ function Layout() {
           bg-center 
           bg-no-repeat 
           bg-fixed
+          flex
+          flex-col
           "
         style={{
           backgroundImage: 'url(/GrayWaves.png)'
         }}
       >
 
-        {/* Global Navigation */}
+        {/* Global Navigation - Hidden on mobile, shows on desktop */}
         <nav className="
-          flex justify-center 
+          hidden lg:flex
+          flex-row 
+          justify-center 
+          items-center
           text-[#333] 
           text-base
           font-poppins 
           font-semibold
           gap-10
-          pt-20"
+          pt-16
+          pb-20
+          px-20 xl:px-24"
         >
           <NavAnchor to="/">Home</NavAnchor>
           <NavAnchor to="/about">About</NavAnchor>
@@ -36,34 +43,59 @@ function Layout() {
           <NavAnchor to="/contact">Contact</NavAnchor>
         </nav>
 
-        <Outlet />
+        <Outlet/>
+
+        {/* Global Navigation - Shows on mobile/tablet, hidden on desktop */}
+        <nav className="
+          flex lg:hidden
+          flex-col 
+          justify-center 
+          items-center
+          text-[#333] 
+          text-sm sm:text-2xl
+          font-poppins 
+          font-semibold
+          gap-3 sm:gap-5
+          pt-8 sm:pt-12 md:pt-16
+          pb-17 sm:pb-21 md:pb-25
+          px-20 sm:px-28 md:px-45"
+        >
+          <NavAnchor to="/">Home</NavAnchor>
+          <NavAnchor to="/about">About</NavAnchor>
+          <NavAnchor to="/projects">Projects</NavAnchor>
+          <NavAnchor to="/contact">Contact</NavAnchor>
+        </nav>
       </div>
     </>
   );
 }
 
-
 export default Layout;
 
 
 
-import ProfilePic from "./ProfilePic.png";
+// About.tsx
 
-function Home() {
-  return (
-    <main className="flex justify-center flex-col items-center">
-      <img 
-        src={ProfilePic} 
-        className="w-1/5 rounded-full mt-17 mb-5"
-        alt="Profile Pic"
-      />
-
-      <p className="text-[#f4f4f4]  text-base font-poppins font-semibold">ERIC JOHN MERCOLINO</p>
-    </main>
-  );
+function About() {
+    return(
+        <main className="
+          flex 
+          justify-center 
+          flex-col 
+          items-center 
+          flex-1
+          px-6 sm:px-8
+          pt-8 sm:pt-16 lg:pt-0
+          pb-8 sm:pb-12 lg:pb-16
+          lg:-mt-16"
+        >
+            <label>Name</label>
+            <p>Eric John Mercolino</p>
+        </main>
+    );
 }
 
-export default Home;
+export default About;
 
 
 
@@ -74,7 +106,7 @@ import type { ReactNode } from "react";
 
 // Define the styles that ALL links will share (Structural styles)
 const BASE_STYLES = 
-  "transition-colors w-25 py-1.5 text-center rounded-full";
+  "transition-colors w-full lg:w-40 py-2 sm:py-2.5 lg:py-2 text-center rounded-full";
 
 // Define the styles for the three possible states
 const INACTIVE_STYLES = "bg-[#f4f4f4] text-[#333] hover:bg-[#333] hover:text-[#f4f4f4]";
