@@ -16,7 +16,8 @@ function Layout() {
           bg-fixed
           flex
           flex-col
-          "
+          items-center
+          pt-10 sm:pt-20"
         style={{
           backgroundImage: 'url(/GrayWaves.png)'
         }}
@@ -24,18 +25,16 @@ function Layout() {
 
         {/* Global Navigation - Hidden on mobile, shows on desktop */}
         <nav className="
-          hidden lg:flex
-          flex-row 
-          justify-center 
-          items-center
+          flex
           text-[#333] 
-          text-base
+          bg-[#f4f4f4]
+          rounded-full
+          text-base sm:text-2xl lg:text-lg
           font-poppins 
           font-semibold
-          gap-10
-          pt-16
-          pb-20
-          px-20 xl:px-24"
+          gap-1 sm:gap-2
+          py-1 sm:py-2
+          px-1 sm:px-2"
         >
           <NavAnchor to="/">Home</NavAnchor>
           <NavAnchor to="/about">About</NavAnchor>
@@ -44,27 +43,6 @@ function Layout() {
         </nav>
 
         <Outlet/>
-
-        {/* Global Navigation - Shows on mobile/tablet, hidden on desktop */}
-        <nav className="
-          flex lg:hidden
-          flex-col 
-          justify-center 
-          items-center
-          text-[#333] 
-          text-sm sm:text-2xl
-          font-poppins 
-          font-semibold
-          gap-3 sm:gap-5
-          pt-8 sm:pt-12 md:pt-16
-          pb-17 sm:pb-21 md:pb-25
-          px-20 sm:px-28 md:px-45"
-        >
-          <NavAnchor to="/">Home</NavAnchor>
-          <NavAnchor to="/about">About</NavAnchor>
-          <NavAnchor to="/projects">Projects</NavAnchor>
-          <NavAnchor to="/contact">Contact</NavAnchor>
-        </nav>
       </div>
     </>
   );

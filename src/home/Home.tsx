@@ -10,10 +10,7 @@ function Home() {
       flex-col 
       items-center 
       flex-1
-      px-6 sm:px-8
-      pt-12 sm:pt-16 lg:pt-0
-      pb-8 sm:pb-12 lg:pb-16
-      lg:-mt-16"
+      pb-8 sm:pb-12 lg:pb-16"
     >
       <img 
         src={ProfilePic} 

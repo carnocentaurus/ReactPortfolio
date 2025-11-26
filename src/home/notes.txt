@@ -1,7 +1,7 @@
 // Layout.tsx
 
 import {Outlet} from "react-router-dom";
-import NavAnchor from "./NavAnchor";
+import NavAnchor from "./SharedStyles";
 
 function Layout() {
   return (
@@ -74,61 +74,43 @@ export default Layout;
 
 
 
-// About.tsx
+// Home.tsx
 
-function About() {
-    return(
-        <main className="
-          flex 
-          justify-center 
-          flex-col 
-          items-center 
-          flex-1
-          px-6 sm:px-8
-          pt-8 sm:pt-16 lg:pt-0
-          pb-8 sm:pb-12 lg:pb-16
-          lg:-mt-16"
-        >
-            <label>Name</label>
-            <p>Eric John Mercolino</p>
-        </main>
-    );
-}
+import ProfilePic from "./ProfilePic.png";
 
-export default About;
-
-
-
-// NavAnchor.tsx
-
-import { NavLink, type LinkProps } from "react-router-dom";
-import type { ReactNode } from "react"; 
-
-// Define the styles that ALL links will share (Structural styles)
-const BASE_STYLES = 
-  "transition-colors w-full lg:w-40 py-2 sm:py-2.5 lg:py-2 text-center rounded-full";
-
-// Define the styles for the three possible states
-const INACTIVE_STYLES = "bg-[#f4f4f4] text-[#333] hover:bg-[#333] hover:text-[#f4f4f4]";
-const ACTIVE_STYLES = "bg-[#333] text-[#f4f4f4] hover:opacity-80";
-
-// NavAnchor component accepts all props that a regular NavLink does
-interface NavAnchorProps extends LinkProps {
-  children: ReactNode;
-}
-
-function NavAnchor({ children, className, ...props }: NavAnchorProps) {
+function Home() {
   return (
-    <NavLink 
-      {...props}
-      // Use the className function to conditionally apply styles
-      className={({ isActive }) => 
-        `${BASE_STYLES} ${isActive ? ACTIVE_STYLES : INACTIVE_STYLES} ${className || ''}`
-      }
+    <main className="
+      flex 
+      justify-center 
+      flex-col 
+      items-center 
+      flex-1
+      px-6 sm:px-8
+      pt-12 sm:pt-16 lg:pt-0
+      pb-8 sm:pb-12 lg:pb-16
+      lg:-mt-16"
     >
-      {children}
-    </NavLink>
+      <img 
+        src={ProfilePic} 
+        className="
+          w-40 sm:w-60 md:w-64 lg:w-64 xl:w-72
+          rounded-full 
+          mb-6 sm:mb-8"
+        alt="Profile Pic"
+      />
+
+      <p className="
+        text-[#f4f4f4] 
+        text-sm sm:text-2xl lg:text-lg
+        font-poppins 
+        font-semibold
+        text-center"
+      >
+        ERIC JOHN MERCOLINO
+      </p>
+    </main>
   );
 }
 
-export default NavAnchor;
+export default Home;
