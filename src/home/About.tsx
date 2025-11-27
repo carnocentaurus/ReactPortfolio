@@ -17,7 +17,6 @@ const About: FC = () => {
         const currentYear: number = date.getFullYear();
         // date.getMonth() returns 0-11, adding 1 makes it 1-12
         const currentMonth: number = date.getMonth() + 1; 
-        alert(currentMonth)
         const currentDate: number = date.getDate();
 
         let age: number = currentYear - birthYear;
