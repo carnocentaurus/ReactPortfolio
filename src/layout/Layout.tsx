@@ -2,8 +2,9 @@
 
 import {Outlet} from "react-router-dom";
 import NavAnchor from "./SharedStyles";
+import {type FC} from "react";
 
-function Layout() {
+const Layout: FC = () => {
   return (
     <>
       <div 

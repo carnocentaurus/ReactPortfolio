@@ -1,8 +1,9 @@
 // Home.tsx
 
 import ProfilePic from "./ProfilePic.png";
+import {type FC} from "react";
 
-function Home() {
+const Home: FC = () => {
   return (
     <main className="
       flex 

@@ -12,7 +12,9 @@ import Contact from "./home/Contact";
 // Individual Projects
 import Pokedex from "./projects/Pokedex/Pokedex";
 
-function App() {
+import {type FC} from "react";
+
+const App: FC = () => {
   return (
     <Routes>
       {/* Layout wrapper */}
