@@ -1,29 +1,63 @@
 // About.tsx
 
 import { AboutLabel, AboutText } from "../layout/SharedStyles";
+import { useState, useEffect, type FC } from "react";
 
-function About() {
+// Define the component using the FunctionComponent (FC) type
+const About: FC = () => {
+    const [ageDisplay, setAgeDisplay] = useState<number>(0);
+
+    useEffect(() => {
+        const birthYear: number = 2004;
+        const birthMonth: number = 5;
+        const birthDate: number = 19;
+
+        const date: Date = new Date();
+
+        const currentYear: number = date.getFullYear();
+        // date.getMonth() returns 0-11, adding 1 makes it 1-12
+        const currentMonth: number = date.getMonth() + 1; 
+        alert(currentMonth)
+        const currentDate: number = date.getDate();
+
+        let age: number = currentYear - birthYear;
+
+        // if not birthday yet
+        if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDate < birthDate)) {
+            age--;
+        }
+
+        setAgeDisplay(age);
+
+    }, []); // 5. The empty dependency array [] ensures this runs only ONCE after the initial render.
+
     return(
         <main className="
           flex 
+          flex-col
           justify-center 
           items-center 
+          bg-[#f4f4f4]
+          border-3
+          border-[#333]
+          rounded-3xl
           px-6 sm:px-8
-          pt-8 sm:pt-16 lg:pt-0
-          pb-8 sm:pb-12 lg:pb-16
-          lg:-mt-16"
+          pt-8 sm:pt-16 lg:pt-10
+          pb-6 sm:pb-10 lg:pb-5
+          mt-10 sm:mt-20 
+          lg:-mb-30"
         >
             <AboutLabel>Name</AboutLabel>
             <AboutText>Eric John Mercolino</AboutText>
 
-            <label>Age</label>
-            <p>21</p>
+            <AboutLabel>Age</AboutLabel>
+            <AboutText>{ageDisplay}</AboutText>
 
-            <label>Country</label>
-            <p>Philippines</p>
+            <AboutLabel>Country</AboutLabel>
+            <AboutText>Philippines</AboutText>
 
-            <label>School</label>
-            <p>Guimaras State University</p>
+            <AboutLabel>College</AboutLabel>
+            <AboutText>Guimaras State University</AboutText>
         </main>
     );
 }
