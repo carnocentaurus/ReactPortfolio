@@ -64,3 +64,29 @@ export function AboutText({ children, className, ...props }: AboutTextProps) {
     </p>
   );
 }
+
+// ============= PROJECT ANCHOR COMPONENT =============
+
+const PROJECT_ANCHOR_STYLES = `
+  font-poppins text-[#f4f4f4]
+  text-lg sm:text-3xl lg:text-base
+  w-55 sm:w-90 lg:w-70
+  py-2 sm:py-4 lg:py-2
+  text-center bg-[#333] rounded-full
+  hover:bg-[#a3a3a3] hover:text-[#333]
+`.trim();
+
+interface ProjectAnchorProps extends LinkProps {
+  children: ReactNode;
+}
+
+export function ProjectAnchor({ children, className, ...props }: ProjectAnchorProps) {
+  return (
+    <NavLink 
+      {...props}
+      className={`${PROJECT_ANCHOR_STYLES} ${className || ''}`}
+    >
+      {children}
+    </NavLink>
+  );
+}

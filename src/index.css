@@ -13,6 +13,15 @@
   src: url("./assets/fonts/Righteous.ttf") format("truetype");
 }
 
+@utility scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
 html, body, #root {
   width: 100%;
   min-height: 100vh;
