@@ -28,23 +28,20 @@ const About: FC = () => {
 
         setAgeDisplay(age);
 
-    }, []); // 5. The empty dependency array [] ensures this runs only ONCE after the initial render.
+    }, []); // The empty dependency array [] ensures this runs only ONCE after the initial render.
 
     return(
         <main className="
           flex 
           flex-col
-          justify-center 
-          items-center 
           bg-[#f4f4f4]
           border-3
           border-[#333]
-          rounded-3xl
+          rounded-2xl
           px-6 sm:px-8
-          pt-8 sm:pt-16 lg:pt-10
-          pb-6 sm:pb-10 lg:pb-5
-          mt-10 sm:mt-20 
-          lg:-mb-30"
+          py-6 sm:py-8
+          mt-10 sm:mt-20
+          pt-10 sm:pt-14 lg:pt-12"
         >
             <AboutLabel>Name</AboutLabel>
             <AboutText>Eric John Mercolino</AboutText>

@@ -29,7 +29,7 @@ export default function NavAnchor({ children, className, ...props }: NavAnchorPr
 
 // ============= LABEL COMPONENT =============
 const ABOUT_LABEL_STYLES = 
-"text-[#666] font-poppins text-sm sm:text-lg lg:text-sm" as const;
+"text-[#666] font-poppins text-sm sm:text-2xl lg:text-sm" as const;
 
 interface AboutLabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
   children: ReactNode;
@@ -48,7 +48,7 @@ export function AboutLabel({ children, className, ...props }: AboutLabelProps) {
 
 // ============= TEXT COMPONENT =============
 const ABOUT_TEXT_STYLES = 
-"text-[#333] font-poppins font-righteous text-lg sm:text-2xl lg:text-base mb-5" as const;
+"text-[#333] font-poppins font-righteous text-lg sm:text-3xl lg:text-lg mb-5 sm:mb-8 lg:mb-4" as const;
 
 interface AboutTextProps extends HTMLAttributes<HTMLParagraphElement> {
   children: ReactNode;
