@@ -90,3 +90,30 @@ export function ProjectAnchor({ children, className, ...props }: ProjectAnchorPr
     </NavLink>
   );
 }
+
+// ============= INPUT ELEMENT COMPONENT =============
+
+const INPUT_ELEMENT_STYLES = `
+  font-poppins 
+  border-2 sm:border-3 lg:border-2
+  border-[#333]
+  text-[#333]
+  text-base sm:text-3xl lg:text-base
+  w-45 sm:w-90 lg:w-60
+  pl-2 sm:pl-4 lg:pl-3
+  py-1 sm:py-3 lg:py-1
+  placeholder:text-base sm:placeholder:text-3xl lg:placeholder:text-base
+`.trim();
+
+interface InputElementProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  // Remove children from props since input can't have children
+}
+
+export function InputElement({ className, ...props }: InputElementProps) {
+  return (
+    <input
+      {...props}
+      className={`${INPUT_ELEMENT_STYLES} ${className || ''}`}
+    />
+  );
+}

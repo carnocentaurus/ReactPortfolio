@@ -1,7 +1,46 @@
-function Contact() {
+// Contact.tsx
+
+import {type FC} from "react";
+import {InputElement} from "../layout/SharedStyles";
+
+const Contact: FC = () => {
     return(
-        <main>
-            <h1>Contact</h1>
+        <main className="
+          flex
+          flex-col
+          bg-[#f4f4f4]
+          border-3 sm:border-5 lg:border-3
+          border-[#333]
+          rounded-2xl
+          gap-2 sm:gap-4 lg:gap-2
+          mt-10 sm:mt-20 lg:mt-10
+          py-5 sm:py-10 lg:py-7
+          px-5 sm:px-10 lg:px-7
+          ">
+            <InputElement placeholder="Your Name" required/>
+            <InputElement placeholder="Your Email" required/>
+            <textarea className="
+              font-poppins 
+              border-2 sm:border-3 lg:border-2
+            border-[#333]
+            text-[#333]
+              text-base sm:text-3xl lg:text-base
+              w-45 sm:w-90 lg:w-60
+              h-25 sm:h-60
+              pt-2
+              pl-2 sm:pl-4
+              placeholder:text-base sm:placeholder:text-3xl lg:placeholder:text-base
+            " placeholder="Your Message"></textarea>
+            <button className="
+              font-poppins 
+              text-center
+              text-[#f4f4f4]
+              bg-[#333]
+              text-base sm:text-3xl lg:text-base
+              w-45 sm:w-90 lg:w-60
+              py-1 sm:py-4 lg:py-1
+            hover:bg-[#a3a3a3] hover:text-[#333]
+            ">Send</button>
         </main>
     );
 }
