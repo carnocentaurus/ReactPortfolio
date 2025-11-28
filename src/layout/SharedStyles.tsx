@@ -100,8 +100,8 @@ const INPUT_ELEMENT_STYLES = `
   text-[#333]
   text-base sm:text-3xl lg:text-base
   w-45 sm:w-90 lg:w-60
-  pl-2 sm:pl-4 lg:pl-3
   py-1 sm:py-3 lg:py-1
+  px-2 sm:px-4 lg:px-3
   placeholder:text-base sm:placeholder:text-3xl lg:placeholder:text-base
 `.trim();
 
