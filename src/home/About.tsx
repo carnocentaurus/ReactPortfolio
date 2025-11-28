@@ -39,9 +39,9 @@ const About: FC = () => {
           border-[#333]
           rounded-2xl
           px-6 sm:px-8
-          py-6 sm:py-8
-          mt-10 sm:mt-20
-          pt-10 sm:pt-14 lg:pt-12"
+          py-6 sm:py-8 lg:py-4
+          mt-10 sm:mt-20 lg:mt-10
+          pt-10 sm:pt-14 lg:pt-10"
         >
             <AboutLabel>Name</AboutLabel>
             <AboutText>Eric John Mercolino</AboutText>

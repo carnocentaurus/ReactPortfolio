@@ -48,7 +48,7 @@ export function AboutLabel({ children, className, ...props }: AboutLabelProps) {
 
 // ============= TEXT COMPONENT =============
 const ABOUT_TEXT_STYLES = 
-"text-[#333] font-poppins font-righteous text-lg sm:text-3xl lg:text-lg mb-5 sm:mb-8 lg:mb-4" as const;
+"text-[#333] font-poppins font-semibold text-lg sm:text-3xl lg:text-lg mb-5 sm:mb-8 lg:mb-4" as const;
 
 interface AboutTextProps extends HTMLAttributes<HTMLParagraphElement> {
   children: ReactNode;
@@ -70,7 +70,7 @@ export function AboutText({ children, className, ...props }: AboutTextProps) {
 const PROJECT_ANCHOR_STYLES = `
   font-poppins text-[#f4f4f4]
   text-lg sm:text-3xl lg:text-base
-  w-55 sm:w-90 lg:w-70
+  w-60 sm:w-100 lg:w-70
   py-2 sm:py-4 lg:py-2
   text-center bg-[#333] rounded-full
   hover:bg-[#a3a3a3] hover:text-[#333]
