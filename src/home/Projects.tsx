@@ -16,7 +16,7 @@ const Projects: FC = () => {
           py-5 sm:py-10 lg:py-7
           px-5 sm:px-10 lg:px-7
           mt-10 sm:mt-20 lg:mt-10
-          max-h-115 sm:max-h-198 md:max-h-178 lg:max-h-97
+          max-h-115 sm:max-h-198 md:max-h-178 lg:max-h-110
           overflow-y-scroll
           scrollbar-hide
         ">

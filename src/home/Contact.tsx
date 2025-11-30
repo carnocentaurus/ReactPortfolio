@@ -78,7 +78,7 @@ const Contact: FC = () => {
                     text-[#333]
                       text-base sm:text-3xl lg:text-base
                       w-45 sm:w-90 lg:w-60
-                      h-25 sm:h-60 lg:h-50
+                      h-50 sm:h-60 lg:h-50
                       pt-2
                       px-2 sm:px-4 lg:px-3
                       placeholder:text-base sm:placeholder:text-3xl lg:placeholder:text-base

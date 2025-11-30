@@ -18,7 +18,7 @@ const Layout: FC = () => {
           flex
           flex-col
           items-center
-          pt-10 sm:pt-20"
+          pt-10 sm:pt-20 lg:pt-10"
         style={{
           backgroundImage: 'url(/GrayWaves.png)'
         }}

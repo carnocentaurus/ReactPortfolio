@@ -11,7 +11,7 @@ const Home: FC = () => {
       flex-col 
       items-center 
       flex-1
-      pb-8 sm:pb-12 lg:pb-16"
+      pb-8 sm:pb-12 lg:pb-10"
     >
       <img 
         src={ProfilePic} 
