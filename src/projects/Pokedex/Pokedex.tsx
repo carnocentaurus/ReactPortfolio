@@ -153,6 +153,7 @@ const Pokedex: FC = () => {
             max-h-120 sm:max-h-200 md:max-h-170 lg:max-h-115
             overflow-y-scroll
         ">
+            {/* TITLE */}
             <p className="
                 font-righteous 
               text-[orangered] 
@@ -160,6 +161,7 @@ const Pokedex: FC = () => {
                 mb-5 sm:mb-10 lg:mb-5
             ">POKEDEX</p>
 
+            {/* TABS */}
             <div className="
                 flex 
                 justify-evenly 
@@ -184,6 +186,7 @@ const Pokedex: FC = () => {
             </div>
 
 
+            {/* RANDOM DIV */}
             <div className={`${activeTab === "random" ? "block" : "hidden"}`}>
               <img
                   className="mx-auto w-40 sm:w-60 lg:w-40"
@@ -211,6 +214,7 @@ const Pokedex: FC = () => {
             </div>
 
 
+            {/* SEARCH DIV */}
             <div className={`${activeTab === "search" ? "block" : "hidden"}`}>
                 <div className="flex justify-center">
                     <input
@@ -228,7 +232,6 @@ const Pokedex: FC = () => {
                             placeholder:text-sm sm:placeholder:text-2xl lg:placeholder:text-sm
                             placeholder:text-[orangered]
                         "
-                        type="number"
                         placeholder="Enter Name or ID"
                     />
                     <button 
