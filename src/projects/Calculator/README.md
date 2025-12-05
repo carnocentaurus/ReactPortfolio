@@ -1,10 +1,17 @@
-# Basic Calculator
+# Calculator
+A functional calculator with safe mathematical expression evaluation.
 
-## Description
-Basic calculator program that can handle common calculator operations
+## Features
+- Basic operations (+, -, ×, ÷)
+- Decimal support
+- Parentheses for complex expressions
+- Safe evaluation using mathjs (no eval())
+- Error handling
 
-## Installations
-1. Install `mathjs` by running `npm install mathjs`
+## Technologies
+- React + TypeScript
+- mathjs for expression parsing
+- Tailwind CSS for styling
 
-## Dependencies
-1. `mathjs` - for safe mathematical evaluations
+## Security
+Uses `mathjs` library instead of `eval()` for safe mathematical expression evaluation.
