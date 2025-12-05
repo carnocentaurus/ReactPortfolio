@@ -117,3 +117,35 @@ export function InputElement({ className, ...props }: InputElementProps) {
     />
   );
 }
+
+// ============= CALCULATOR BUTTONS COMPONENT =============
+
+const CALCULATOR_BTN_STYLES = `
+  font-poppins 
+  text-[#f4f4f4]
+  text-center
+  text-2xl sm:text-4xl lg:text-2xl
+  mx-auto
+  pt-2 sm:pt-4 lg:pt-2
+  w-12 sm:w-18 lg:w-12
+  h-12 sm:h-18 lg:h-12
+  rounded-full
+  shadow-sm sm:shadow-md lg:shadow-sm
+  shadow-[#333]
+  hover:opacity-70
+`.trim();
+
+interface CalculatorBtnProps extends HTMLAttributes<HTMLParagraphElement> {
+  children: ReactNode;
+}
+
+export function CalculatorBtn({ children, className, ...props }: CalculatorBtnProps) {
+  return (
+    <p 
+      {...props}
+      className={`${CALCULATOR_BTN_STYLES} ${className || ''}`}
+    >
+      {children}
+    </p>
+  );
+}
