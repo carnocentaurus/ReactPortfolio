@@ -1,8 +1,7 @@
-# React Portfolio
-A personal portfolio website built with React, TypeScript, and Tailwind CSS v4, showcasing various web development projects.
+# ReactPortfolio
+A personal portfolio website built with React, TypeScript, and Tailwind CSS v4, showcasing various web development projects
 
 ## Live Demo
-
 [View Live Site](https://react-portfolio-nu-seven-37.vercel.app/)
 
 ## Features
@@ -61,7 +60,4 @@ npm run build
 - `typescript` - Type safety
 
 ## Contact
-Feel free to reach out through the contact form on the website or connect with me on [GitHub](https://github.com/carnocentaurus).
-
-## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
+Feel free to reach out through the contact form on the website or connect with me on [GitHub](https://github.com/carnocentaurus)
