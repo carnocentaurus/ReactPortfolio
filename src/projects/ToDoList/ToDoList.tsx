@@ -1,6 +1,6 @@
 // TaskManager.tsx
 
-import { type FC, useState, useEffect } from "react";
+import { type FC } from "react";
 
 
 const ToDoList: FC = () => {
