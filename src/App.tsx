@@ -20,7 +20,7 @@ import ClockAndCalendar from "./projects/ClockAndCalendar/ClockAndCalendar";
 import MultiplicationTable from "./projects/MultiplicationTable/MultiplicationTable";
 import AgeCalculator from "./projects/AgeCalculator/AgeCalculator";
 import RandomJokeGenerator from "./projects/RandomJokeGenerator/RandomJokeGenerator";
-import TaskManager from "./projects/TaskManager/TaskManager";
+import ToDoList from "./projects/ToDoList/ToDoList";
 import WeatherSystem from "./projects/WeatherSystem/WeatherSystem";
 import GradeInterpreter from "./projects/GradeInterpreter/GradeInterpreter";
 import ResumeCreator from "./projects/ResumeCreator/ResumeCreator";
@@ -49,7 +49,7 @@ const App: FC = () => {
         <Route path="projects/multiplicationtable" element={<MultiplicationTable />} />
         <Route path="projects/agecalculator" element={<AgeCalculator />} />
         <Route path="projects/randomjokegenerator" element={<RandomJokeGenerator />} />
-        <Route path="projects/taskmanager" element={<TaskManager />} />
+        <Route path="projects/todolist" element={<ToDoList />} />
         <Route path="projects/weathersystem" element={<WeatherSystem />} />
         <Route path="projects/gradeinterpreter" element={<GradeInterpreter />} />
         <Route path="projects/resumecreator" element={<ResumeCreator />} />

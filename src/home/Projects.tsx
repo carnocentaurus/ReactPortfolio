@@ -22,6 +22,7 @@ const Projects: FC = () => {
         ">
             <ProjectAnchor to="/projects/pokedex">Pokedex</ProjectAnchor>
             <ProjectAnchor to="/projects/calculator">Calculator</ProjectAnchor>
+            <ProjectAnchor to="/projects/todolist">ToDoList</ProjectAnchor>
             <ProjectAnchor to="/projects/rockpaperscissors">RockPaperScissors</ProjectAnchor>
             <ProjectAnchor to="/projects/numberguessinggame">NumberGuessingGame</ProjectAnchor>
             <ProjectAnchor to="/projects/randomizer">Randomizer</ProjectAnchor>
@@ -30,7 +31,6 @@ const Projects: FC = () => {
             <ProjectAnchor to="/projects/multiplicationtable">MultiplicationTable</ProjectAnchor>
             <ProjectAnchor to="/projects/agecalculator">AgeCalculator</ProjectAnchor>
             <ProjectAnchor to="/projects/randomjokegenerator">RandomJokeGenerator</ProjectAnchor>
-            <ProjectAnchor to="/projects/taskmanager">TaskManager</ProjectAnchor>
             <ProjectAnchor to="/projects/weathersystem">WeatherSystem</ProjectAnchor>
             <ProjectAnchor to="/projects/gradeinterpreter">GradeInterpreter</ProjectAnchor>
             <ProjectAnchor to="/projects/resumecreator">ResumeCreator</ProjectAnchor>
