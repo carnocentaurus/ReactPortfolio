@@ -5,7 +5,7 @@ import type { ReactNode, LabelHTMLAttributes, HTMLAttributes } from "react";
 
 // ============= NAV ANCHOR COMPONENT =============
 const BASE_STYLES = 
-  "transition-colors w-20 sm:w-30 lg:w-40 py-2 sm:py-2.5 lg:py-1 text-center rounded-full" as const;
+  "transition-colors w-full py-2 sm:py-2.5 lg:py-1 text-center rounded-full" as const;
 
 const INACTIVE_STYLES = "bg-[#f4f4f4] text-[#333] hover:bg-[#333] hover:text-[#f4f4f4]" as const;
 const ACTIVE_STYLES = "bg-[#333] text-[#f4f4f4] hover:opacity-80" as const;

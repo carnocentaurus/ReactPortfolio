@@ -18,7 +18,8 @@ const Layout: FC = () => {
           flex
           flex-col
           items-center
-          pt-10 sm:pt-20 lg:pt-10"
+          pt-10 sm:pt-20 lg:pt-15
+        "
         style={{
           backgroundImage: 'url(/GrayWaves.png)'
         }}
@@ -30,12 +31,10 @@ const Layout: FC = () => {
           text-[#333] 
           bg-[#f4f4f4]
           rounded-full
-          text-base sm:text-2xl lg:text-lg
+          text-sm sm:text-2xl lg:text-lg
           font-poppins 
-          font-semibold
-          gap-1 sm:gap-2
-          py-1 sm:py-2
-          px-1 sm:px-2"
+          w-80 sm:w-120 lg:w-150
+        "
         >
           <NavAnchor to="/">Home</NavAnchor>
           <NavAnchor to="/about">About</NavAnchor>
