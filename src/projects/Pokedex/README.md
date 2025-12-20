@@ -34,8 +34,7 @@ A responsive, interactive Pokédex web application built with React, TypeScript,
 5. Invalid inputs (empty values or out-of-range IDs) trigger validation alerts.
 
 ## Screenshots
-- [Random Tab](PokedexRandomTab.png)
-- [Search Tab](PokedexSearchTab.png)
+- Soon
 
 ## How to Run
 1. Navigate to the project directory:
