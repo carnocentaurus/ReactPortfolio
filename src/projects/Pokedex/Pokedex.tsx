@@ -149,8 +149,8 @@ const Pokedex: FC = () => {
             px-5
             w-70 sm:w-115 lg:w-80
             max-w-70 sm:max-w-115
-            h-115
-            max-h-120 sm:max-h-200 md:max-h-170 lg:max-h-115
+            h-125 sm:h-200 md:h-180 lg:h-120
+            max-h-125 sm:max-h-200 md:max-h-180 lg:max-h-120
             overflow-y-scroll
         ">
             {/* TITLE */}

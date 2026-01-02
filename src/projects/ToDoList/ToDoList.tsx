@@ -216,8 +216,8 @@ const ToDoList: FC = () => {
             px-9 sm:px-12
             w-70 sm:w-115 lg:w-110
             max-w-70 sm:max-w-115
-            h-125 sm:h-195
-            max-h-125 sm:max-h-200 md:max-h-170 lg:max-h-115
+            h-125 sm:h-200 md:h-190 lg:h-120
+            max-h-125 sm:max-h-200 md:max-h-190 lg:max-h-120
             overflow-y-scroll
         ">
 
