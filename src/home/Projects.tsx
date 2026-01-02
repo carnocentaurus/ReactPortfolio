@@ -9,14 +9,15 @@ const Projects: FC = () => {
           flex
           flex-col
           bg-[#f4f4f4]
-          border-3 sm:border-5 lg:border-3
           border-[#333]
-          rounded-2xl
+          rounded-xl
           gap-2 sm:gap-3 lg:gap-2
-          py-5 sm:py-10 lg:py-7
-          px-5 sm:px-10 lg:px-7
+          py-6 sm:py-10 lg:py-7
+          px-6 sm:px-10 lg:px-7
           mt-10 sm:mt-20 lg:mt-10
-          max-h-115 sm:max-h-198 md:max-h-178 lg:max-h-110
+          w-70 sm:w-110
+          max-w-70 sm:max-w-110
+          max-h-125 sm:max-h-198 md:max-h-178 lg:max-h-120
           overflow-y-scroll
           scrollbar-hide
         ">

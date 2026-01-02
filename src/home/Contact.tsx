@@ -45,14 +45,16 @@ const Contact: FC = () => {
           flex
           flex-col
           bg-[#f4f4f4]
-          border-3 sm:border-5 lg:border-3
           border-[#333]
-          rounded-2xl
+          rounded-xl
           gap-2 sm:gap-4 lg:gap-2
           mt-10 sm:mt-20 lg:mt-10
-          py-5 sm:py-10 lg:py-7
-          px-5 sm:px-10 lg:px-7
-          ">
+          py-6 sm:py-10 lg:py-7
+          px-6 sm:px-10 lg:px-7
+          w-70 sm:w-110
+          max-w-70 sm:max-w-110
+          "
+        >
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <InputElement 
@@ -73,11 +75,11 @@ const Contact: FC = () => {
                     required
                     className="
                       font-poppins 
-                      border-2 sm:border-3 lg:border-2
+                      border sm:border-3 lg:border-2
                     border-[#333]
                     text-[#333]
                       text-base sm:text-3xl lg:text-base
-                      w-45 sm:w-90 lg:w-60
+                      w-full
                       h-50 sm:h-60 lg:h-50
                       pt-2
                       px-2 sm:px-4 lg:px-3
@@ -93,7 +95,7 @@ const Contact: FC = () => {
                     text-[#f4f4f4]
                     bg-[#333]
                       text-base sm:text-3xl lg:text-base
-                      w-45 sm:w-90 lg:w-60
+                      w-full
                       py-1 sm:py-4 lg:py-1
                     hover:bg-[#a3a3a3] hover:text-[#333]
                     "

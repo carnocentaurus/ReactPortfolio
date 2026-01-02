@@ -68,12 +68,15 @@ export function AboutText({ children, className, ...props }: AboutTextProps) {
 // ============= PROJECT ANCHOR COMPONENT =============
 
 const PROJECT_ANCHOR_STYLES = `
-  font-poppins text-[#f4f4f4]
+  font-poppins 
+  text-[#f4f4f4]
   text-lg sm:text-3xl lg:text-base
-  w-60 sm:w-100 lg:w-70
+  w-full
   py-2 sm:py-4 lg:py-2
-  text-center bg-[#333] rounded-full
-  hover:bg-[#a3a3a3] hover:text-[#333]
+  text-center 
+  bg-[#333] 
+  hover:bg-[#a3a3a3] 
+  hover:text-[#333]
 `.trim();
 
 interface ProjectAnchorProps extends LinkProps {
@@ -95,11 +98,11 @@ export function ProjectAnchor({ children, className, ...props }: ProjectAnchorPr
 
 const INPUT_ELEMENT_STYLES = `
   font-poppins 
-  border-2 sm:border-3 lg:border-2
+  border-1 sm:border-3 lg:border-2
   border-[#333]
   text-[#333]
   text-base sm:text-3xl lg:text-base
-  w-45 sm:w-90 lg:w-60
+  w-full
   py-1 sm:py-3 lg:py-1
   px-2 sm:px-4 lg:px-3
   placeholder:text-base sm:placeholder:text-3xl lg:placeholder:text-base

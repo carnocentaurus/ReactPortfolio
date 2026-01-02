@@ -35,13 +35,15 @@ const About: FC = () => {
           flex 
           flex-col
           bg-[#f4f4f4]
-          border-3
           border-[#333]
-          rounded-2xl
-          px-6 sm:px-8
-          py-6 sm:py-8 lg:py-4
+          rounded-xl
+          px-6 sm:px-10 lg:px-7
+          py-6 sm:py-10 lg:py-7
           mt-10 sm:mt-20 lg:mt-10
-          pt-10 sm:pt-14 lg:pt-10"
+          pt-10 sm:pt-14 lg:pt-10
+          w-70 sm:w-110 lg:w-85
+          max-w-70 sm:max-w-110 lg:max-w-85
+        "
         >
             <AboutLabel>Name</AboutLabel>
             <AboutText>Eric John Mercolino</AboutText>
